@@ -11,8 +11,8 @@ export class CheeseList extends React.Component {
     
     render () {
         console.log(this.props.cheeses)
-        let cheeseList = this.props.cheeses.map(cheese => {
-            return <li>{cheese}</li>
+        let cheeseList = this.props.cheeses.map((cheese, index) => {
+            return <li key={index}>{cheese}</li>
         })
 
     
